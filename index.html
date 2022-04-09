@@ -11,7 +11,7 @@
 <body>
     <h1>titleパラメータに文字入れるとそれがタイトルになる(タブの仕分けに使うだけ)</h1>
     <script>
-        document.title = encodeURI(new URLSearchParams(window.location.search).get("title"))
+        document.title = new URLSearchParams(window.location.search).get("title")
     </script>
 </body>
 
